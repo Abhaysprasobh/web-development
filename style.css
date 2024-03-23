@@ -31,12 +31,16 @@
       z-index: 1; /* Ensure the text is above the image */
     }
     .header-text h1 {
-      font-size: 36px;
+      font-size: 40px;
       margin-bottom: 20px;
+      text-shadow: #1f1f24;
     }
     .header-text p {
-      font-size: 18px;
+      font-size: 25px;
       margin-bottom: 0;
+      font-weight: 400;
+      text-shadow: #1f1f24;
+
     }
     nav {
       position: absolute;
