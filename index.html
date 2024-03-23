@@ -1,11 +1,118 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurant Template</title>
   <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      position: relative;
+      text-align: center;
+      margin-bottom: -4px; /* Adjusted margin */
+    }
+    header img {
+      width: 100%;
+      height: auto;
+    }
+    .header-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      z-index: 1; /* Ensure the text is above the image */
+    }
+    .header-text h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .header-text p {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+    nav {
+      position: absolute;
+      top: 40px;
+      right: 100px;
+      z-index: 1; /* Ensure the navigation is above the image */
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 20px 40px; /* Doubled padding */
+      font-size: 18px; /* Doubled font size */
+      font-weight: bold; /* Make it bolder */
+    }
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    .section-below-header {
+      background-color: #FFD700; /* Yellow background */
+      padding: 50px 0; /* Adjust padding as needed */
+      text-align: center;
+      margin-top: -4px; /* Adjusted margin */
+      display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+    }
+    .section-below-header img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 20px solid #fff; /* White border */
+      margin-left: -20px; /* Move it slightly to the left */
+    }
+    
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px; /* Adjust width as needed */
+  margin: 0 auto; /* Center the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #555;
+}
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.image-gallery img {
+  width: 200px; /* Adjust image width as needed */
+  height: auto;
+  margin: 30px; /* Adjust margin as needed */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: static;
+      bottom: 0;
+      width: 100%;
+    }
   </style>
 </head>
 <body>
